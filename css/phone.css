@@ -1,0 +1,472 @@
+/* 1 rem= 16px;
+100%=16px;
+10px=? that is 62.5% therefore we'll use 62.5% instead of 10 px in root , you are using 10px so that conversion from px to rem be easy just divided by 10*/
+html{
+    font-size: 62.5% ;
+}
+:root{
+    --primary-color:rgb(0, 0, 0);
+    --bg-color:#0f0c2b;
+    --secondory-color:.2rem solid hsl(276.92deg 23.59% 90.93%);
+}
+
+body{
+  
+    margin:0rem;
+    padding:0rem;
+    /* background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_1280.jpg'); */
+   
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    height: 100vh;
+}
+/* Create a grid for header */
+header{
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 'left mid mid mid mid right';
+
+}
+.left{
+    grid-area: left;
+   
+}
+.mid{
+    grid-area: mid;
+    /* border:0.2rem solid rgb(4, 4, 26); */
+}
+.right{
+    grid-area: right;
+   
+}
+/* Created another grid for left side (for logo and name) */
+.left{
+    display: grid;
+    gap: 1rem;
+    
+    grid-template-areas: 'logo Name';
+    margin-top: 1rem;
+    padding: 0rem;
+}
+.logo img{
+    grid-area: logo;
+    
+  
+    width: 4.4rem;
+    margin-left: 12%;
+}
+.Name{
+    margin-top: 12%;
+    margin-left: -9%;
+    font-size: 1.5rem;
+    color: #000000;
+    width: 100%;
+    grid-area: Name;
+    text-shadow: .8rem .4rem 2.5rem   #ffffff;
+}
+.navbar{
+    display: grid;
+    gap: 1rem;
+    list-style-type: none;
+    grid-template-areas: 'active navs1 navs2 navs3 navs4';
+    font-size: 1.8rem;
+    text-decoration: none;
+    white-space: nowrap;
+  
+}
+.nav{
+    color: #000000;
+    text-decoration: none;
+}
+.active{
+    grid-area: active;
+ 
+}
+.navs1{
+    grid-area:navs1;
+}
+.navs2{
+    grid-area: navs2;
+}
+.navs3{
+    grid-area: navs3;
+}
+.navs4{
+    grid-area: navs4;
+}
+/* applying hover effect to header */
+
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color:#511919;
+}
+
+
+
+.btn{
+    margin:auto;
+    background-color:var(--bg-color);
+    color: #dddddd;
+    padding: .7rem .7rem;
+    margin: .2rem .1rem;
+    margin-top: .8rem;
+    border-radius: 15%;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+
+}
+/* hovering effect when clicked on button */
+.btn:hover{
+    color:rgb(21, 21, 103);
+    background-color: #cfb0f5;
+}
+.container{
+    
+    color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: .2rem solid hsl(276.92deg 23.59% 90.93%);
+    padding:4.2rem 4.0rem;
+    border-radius: 1.0rem;
+    margin:-3.9rem .3rem;
+    width:40.0rem;
+    bottom: -1.7rem;
+    position:relative;
+    top: 10%;
+    height: 40.0rem;
+    line-height: 1.0rem;
+    background-color: #00000096;
+    box-shadow:1.0rem 1.0rem 7.6rem 1.0rem #666972;
+    
+}
+.container:hover{
+    background-color: #10183fc7;
+}
+.formgrp input {
+    font-family: "Alegreya", serif;
+    width: 35.0rem;  /* Change width */
+    height: 4.0rem; 
+    margin-left: 7%;
+    margin-bottom: 5%;
+    border-radius: .8rem;
+
+}
+/* Applying hover effect to inputs */
+.formgrp input:hover{
+    background-color: #0f0c2b;
+    color:white;
+
+}
+/* to apply css to plan MarkUp */
+.formgrp select{
+    font-family: "Alegreya", serif;
+    width: 35.6rem;  
+    height: 4.0rem; 
+    margin-left: 7%;
+    margin-bottom: 5%;
+    padding-right: .2rem;
+    border-radius: .8rem;
+}
+.formgrp-goals textarea{
+    font-family: "Alegreya", serif;
+    display: block;
+    margin-top: -11%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    max-width: 25.0rem;
+    min-width: 22.9rem;
+    min-height: 5.6rem;
+    max-height: 7.5rem;
+
+
+}
+.formgrp-goals label{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 12.2rem; 
+    height: 4.3rem; 
+    margin-left: 8%;
+    margin-bottom: 0.1rem;
+    margin-right: 0%;
+    line-height: 1.5rem;
+    text-align: left;
+
+    word-wrap: break-word;
+    
+}
+.container .btn{
+    margin-left: 7%;
+    width: 40%;
+    border: .2rem solid hsl(280.41deg 27.75% 91.86%);
+    border-radius: .8rem ;
+    font-size: 1.5rem;
+}
+.container h2{
+    font-size: 2rem;
+    text-align: center;
+  
+
+}
+header::before{
+    background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114139.jpg?t=st=1737195128~exp=1737198728~hmac=262c63935345b33b0a13f62e5019f6df7128d6cf0ccb68545c5b42f5674a7eb9&w=1060') no-repeat center center ;
+    /* background: url('https://img.freepik.com/free-photo/view-gym-room-training-sports_23-2151699522.jpg?t=st=1737196054~exp=1737199654~hmac=1ec7ae16bb338dfbde63efa010b81ec0fe2702fe32ece3e23998ad5a572a0315&w=1060'); */
+    content: "";
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    top :0;
+    left:0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.8;
+   
+   
+    
+}
+
+.Footer{
+    width: 100vw;
+    display: grid;
+    background-color: var(--bg-color);
+    gap: 0rem;
+   
+    grid-template-columns: fr 1fr;
+    height: 40.4rem;
+    margin-top: 16.0rem; 
+    /* set margin so that footer comes after container  */
+    position: absolute; 
+    grid-template-areas: 'address address address'
+    'copyrights copyrights copyrights';
+    font-size: 1.5rem;
+    
+}
+.foots{
+    color: #a2b3c3;
+}
+#address{
+    grid-area: address;
+
+}
+#copyrights{
+    grid-area: copyrights;
+ 
+    position: relative;
+  
+    justify-self: center;
+
+}
+
+.foots#address{
+    display: grid;
+    /* background-color: rgb(112, 130, 76); */
+    gap: 1rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 'left  social-icons'
+    ;
+   
+}
+
+
+.ms#left{
+    display: grid;
+    gap: 0rem;
+   
+    padding: 1.5rem;
+    
+}
+.msItems{
+    /* border: 3px solid black; */
+    padding: 1.3rem;
+    margin-top: -2.0rem;
+}
+
+#social-icons{
+    grid-area: social-icons;
+}
+footer div.ms{
+    color: rgb(211, 198, 198);
+}
+
+/* for responsiveness */
+@media (min-width:920px) and (max-width:1040px){
+    html{
+        font-size: 79%;
+        
+        .container{
+            margin-top: -8rem;
+        }
+        .Name{
+            margin-left: 1rem;
+        }
+        .navbar{
+            display: grid;
+            margin-top: 7rem;
+            margin-left: -10rem;
+            font-size:2rem;
+        }
+    }
+}
+
+@media (min-width:910px) and (max-width:920px){
+    html{
+        font-size: 80%;
+        .navbar{
+            margin-top: 2rem;
+            margin-right: 3rem;
+        }
+        .container{
+            margin-top: -9rem;
+        }
+        .Name{
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            width: 1rem;
+        }
+    }
+}
+@media (min-width:860px) and (max-width:900px){
+    html{
+        font-size: 50%;
+       
+        
+    }
+}
+@media(min-width:840px) and (max-width:859px){
+    html{
+        font-size: 79%;
+        .navbar{
+            display: grid;
+            margin-top: 4rem;
+            font-size: 2rem;
+            margin-left: -5rem;
+        }
+        .Name{
+            font-size: 1.5rem;
+            width:10rem;
+            margin-right: -6rem;
+            margin-left: 0rem;
+        }
+        .container{
+            margin-top: -14rem;
+        }
+    }
+}
+@media (min-width:610px) and (max-width:839px) {
+    html{
+        font-size: 67%;
+        .navbar{
+            margin-top: 6rem;
+            margin-right: 5rem;
+        }
+        .container{
+            margin-top: -8rem;
+        }
+    }
+   
+}
+@Media (min-width:531px) and (max-width:609px){
+    html{
+        font-size: 40%;
+        .Name{
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+        .navbar{
+            margin-top: 7rem;
+            margin-left: -9rem;
+            font-size: 2rem;
+        }
+        .container{
+            margin-top: -6.5rem;
+        }
+    }
+}
+@media (min-width:445px) and (max-width:530px){
+    html{
+        font-size: 48.9%;
+         width:100vw;
+         .navbar{
+            display: grid;
+                gap: 1rem;
+                margin-top: 4rem;
+        
+                grid-template-areas: 'active active active'
+                'navs1 navs1 navs1' 'navs2 navs2 navs2' 'navs3 navs3 navs3' 'navs4 navs4 navs4' ;
+                font-size: 1.8rem;
+                text-decoration: none;
+                white-space: nowrap;
+             margin-left: -3rem;
+    
+        }
+    
+    }
+}
+@media (min-width:0px) and (max-width:444px){
+    html{
+        font-size: 48%;
+        /* working for 540 */
+    }
+    .navbar{
+        display: block;
+        margin-top: 8rem;
+        margin-left: -18rem;
+        margin-bottom: -9rem;
+        font-size:2rem;
+    }
+    .container{
+        margin-top: -2rem;
+        width: 75%;
+    }
+    .Name{
+        width: 10rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+    .right{
+        display: block;
+        margin-top: 8rem;
+    }
+}
+
+/* dropdown menu */
+ul li ul.dropdown-content{
+    display: grid;
+ 
+    gap: 1rem;
+  
+    list-style-type: none;
+    background-color:#dddddd;
+    width: 15rem;
+    max-width: 20rem;
+    /* height: 12rem; */
+    max-height: 20rem;
+    z-index: 2;
+    display: none;
+    position:absolute;  
+    /* It makes other content not to move from their place by dropdown , the absolute position*/
+}
+
+.content{
+    
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+ul li:hover ul.dropdown-content {
+    display: grid;
+    border-radius: 2rem;
+    border: 0.2rem solid hsl(0, 0%, 83%);
+    box-shadow: 2rem 2rem 3rem 1rem #dddddd;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    
+}

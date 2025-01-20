@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="icon" href="/Assets/Logo.png" type="image/x-icon">
+    <!-- sheet for phone view -->
+    
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css" > -->
+<link rel="stylesheet" href="css/phone.css">
+<body>
+    <header>
+        <!-- for logo -->
+        <div class="left">
+            <div class="logo"><img src="/Assets/Logo.png" alt="Logo of the website"></div>
+            <div class="Name">The Power Zone</div>
+            
+        </div>
+        <!-- mid class for navigatins section -->
+        <div class="mid">
+            
+            <ul class="navbar" >
+                <li><a href="#" class="nav"  class="active">HOME</a></li> 
+                <li><a href="#" class="nav" class="navs1" id="au">ABOUT US</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" class="content">Who We Are</a></li>
+                        <li><a href="#" class="content">Our Mission</a></li>
+                        <li><a href="#" class="content">Our Team</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav" class="nav2">MEMBERSHIP</a>
+    
+                        <ul class="dropdown-content">
+                          <li><a href="/membership-plans" class="content">Membership Plans</a></li>
+                          <li><a href="/sign-up" class="content">Sign Up</a></li>
+                          <li><a href="/login" class="content">Login</a></li>
+                          <li><a href="/membership-benefits" class="content">Benefits</a></li>
+                          <li><a href="/membership-cancel" class="content">Cancel Membership</a></li>
+                        </ul>
+                      
+                </li>
+                
+                <li><a href="#" class="nav" class="navs3">BLOG</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/blog" class="content">All Blogs</a></li>
+                        <li><a href="/top-blogs" class="content">Top Blogs</a></li>
+                        <li><a href="/blog/category/Fitness Tips" class="content">Fitness Tips</a></li>
+                        <li><a href="/blog/category/SuccsessStories" class="content">Success stories</a></li>
+                        <li><a href="/blog/category/Nutrition" class="content">Nutrition</a></li>
+                        
+                      </ul></li>
+                <li><a href="#" class="nav" class="navs4" id="cu">CONTACT US</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/contact" class="content">Contact Form</a></li>
+                        <li><a href="mailto:officialkhushi2024@gmail.com" class="content">Email Us</a></li>
+                        <li><a href="tel:+1234567890" class="content">Call Us</a></li>
+                        <li><a href="/support" class="content">Customer Support</a></li>
+                        <li><a href="/faq" class="content">FAQ</a></li>
+                      </ul>
+                    </li>
+            </ul>
+        </div>
+        <!-- for some buttons-->
+        <div class="right">
+            <button class="btn">CALL US
+            </button>
+            <button class="btn">GET APP</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>🏆 Join The Power Zone Today! 🏆</h2>
+        <form action="NoAction.php">
+            <div class="formgrp">
+                <input type="text" name="Name" id="Name" placeholder="Enter Your name">
+            </div>
+            <div class="formgrp">
+                <input type="email" name="Email" id="email" placeholder="Enter Your email id">
+            </div>
+            <div class="formgrp">
+                <input type="tel" name="Phone" id="Phone" placeholder="Enter Your Mobile No.">
+            </div>
+            <div id="plan" class="formgrp">
+                <select id="membership" name="membership">
+                    <option value="" disabled selected>Select Plan</option>  
+                    <!-- in select placeholder is disable selected -->
+                    <option value="basic">Basic Plan</option> 
+                    <option value="premium">Premium Plan</option>
+                    <option value="elite">Elite Plan</option>
+                </select>
+            </div>
+
+            <div class="formgrp-goals">
+                <label id='question' for="message">Any Specific Fitness Goals?</label>
+                <textarea id="message" name="message" placeholder="E.g. Weight loss, muscle gain, strength training"></textarea> 
+            </div>
+            <button class="btn">
+                submit
+            </button>
+        </form>
+                
+    </div>
+    <footer>
+        <div class="Footer">
+            <div class="foots" id="address">
+                <!-- we are denoting main section as ms -->
+                 <div class="ms" id="left">
+                    <div class="msItems"  id="ad">
+                        <h3>Address:</h3> 
+                        <div id="add">123, abc building, New Delhi-11</div>
+                    </div>
+                    <div class="msItems" id="ph">
+                        <h3>Contact Us:</h3>
+                    <div id="phone"> +91-XXXXXXXX</div></div>
+                    <div class="msItems" id="mail"> <h3>  Email id:</h3>  
+                        contact@thepowerzone.com    
+                    </div>
+                 </div>
+               
+                <div class="ms" id='social-icons'>
+                    <h2>Follow Us</h2>
+                   
+                       <h3>Facebook: <br><a href="#"><i class="fab fa-facebook"> thePowerZone</i></a></h3>
+                        <h3> Instagram <br><a href="#">@thepowerzone99<i class="fab fa-instagram"></i></a></h3>
+                        <h3>Twitter <br> <a href="#">thepowerzone192025<i class="fab fa-twitter"></i></a></h3>
+                        <h3>YouTube <br>  <a href="#">ThePowerZone<i class="fab fa-youtube"></i></a></h3>
+                      
+           
+                </div>
+            </div>
+            <div class="foots" id="copyrights">
+                &copy; 2025 The Power Zone | All Rights Reserved
+            </div>
+        
+        </div>
+    </footer>
+   
+        
+</body>
+       
+</html>

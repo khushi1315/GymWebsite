@@ -1,0 +1,13 @@
+Take aways from my first website (using html,css)
+
+1.you don't need to set width for every dropdownlist just set a max-height , width and max-width
+max-width;
+width;
+max-height;
+
+2.If you don't want you grid layout to overlap other content like in dropdown on hover set it's position to absolute.
+position:absolute;
+
+3.IMP IMP IMP for responsiveness use Grids
+ and values in rem instead of px.
+ 

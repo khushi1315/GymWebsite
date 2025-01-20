@@ -1,0 +1,300 @@
+:root{
+    --primary-color:aliceblue;
+    --bg-color:#0f0c2b;
+}
+
+body{
+  
+    margin:0px;
+    padding:0px;
+    /* background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_1280.jpg'); */
+   
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    height: 100vh;
+}
+/* left portion of header */
+.left{
+    position:absolute;
+    top:2%;
+    left:2%;
+    display: inline-block;
+    padding-right: 52px;
+}
+/* mid section of header */
+.mid{
+    position: sticky;
+    display: block;
+    top: 10px;
+    width: 505px;
+  
+    margin: auto;
+    padding-top: 1%;
+
+}
+/* rightmost section of header */
+.right{
+    position:absolute;
+    top:2%;
+    right:4%;
+    display: inline-block;
+    
+   
+}
+.navbar{
+    display: inline-block;
+    /* list-style: none; */
+ 
+    line-height: 1;
+    display: flex
+;
+    /* list-style: none; */
+    justify-content: center;
+    justify-content: right;
+    align-content: center;
+    width: 500px;
+    margin-top:1px;
+  
+}
+.navbar li{
+    font-size:100;
+    display: inline-block;
+    list-style: none;
+    
+}
+/* to adjsut css properties of list contents */
+.navbar li a{
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 3px;
+    padding-right: 3px;
+    margin: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin:10px;
+    white-space: nowrap;
+
+/* white-space: nowrap; is used in CSS when you want to prevent text from wrapping onto the next line. Instead, the text stays on a single line, even if it overflows the container. */
+}
+/* applying hover effect to header */
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color:#511919;
+}
+.navbar li #au, .navbar li #cu{
+    margin-right: 20px;
+}
+.left img{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    display: inline-block;
+    border-right: 50%;
+}
+.Name{
+    margin-top: -33%;
+    margin-left: 43%;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    margin-top: -33%;
+    margin-left: 43%;
+    text-shadow: 8px 4px 25px   #ffffff;
+}
+.btn{
+    margin:auto;
+    background-color:var(--bg-color);
+    color: #dddddd;
+    padding: 7px 7px;
+    margin: 2px 1px;
+    margin-top: 8px;
+    border-radius: 15%;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+
+}
+/* hovering effect when clicked on button */
+.btn:hover{
+    color:rgb(21, 21, 103);
+    background-color: #cfb0f5;
+}
+.container{
+    color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid hsl(276.92deg 23.59% 90.93%);
+    padding:42px 40px;
+    border-radius: 10px;
+    margin:-39px 3px;
+    width:400px;
+    bottom: -17px;
+    position:relative;
+    top: 10%;
+    height: 400px;
+    line-height: 10px;
+    background-color: #00000096;
+    box-shadow:10px 10px 76px 10px #666972;
+    
+}
+.container:hover{
+    background-color: #10183fc7;
+}
+.formgrp input {
+    font-family: "Alegreya", serif;
+    width: 350px;  /* Change width */
+    height: 40px; 
+    margin-left: 7%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+
+}
+/* Applying hover effect to inputs */
+.formgrp input:hover{
+    background-color: #0f0c2b;
+    color:white;
+
+}
+/* to apply css to plan MarkUp */
+.formgrp select{
+    font-family: "Alegreya", serif;
+    width: 356px;  
+    height: 40px; 
+    margin-left: 7%;
+    margin-bottom: 5%;
+    padding-right: 2px;
+    border-radius: 8px;
+}
+.formgrp textarea{
+    font-family: "Alegreya", serif;
+    display: block;
+    width: 217px;  /* Change width */
+
+    height: 40px; 
+    margin-top: -11%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    max-width: 250px;
+    min-width: 217px;
+    min-height: 56px;
+    max-height: 75px;
+
+
+}
+.formgrp #question{
+    display: inline-block;
+    width: 122px; 
+    height: 43px; 
+    margin-left: 8%;
+    margin-bottom: 0px;
+    margin-right: 0%;
+    line-height: 1.4; 
+    text-align: left;
+    
+}
+.container .btn{
+    margin-left: 7%;
+    width: 40%;
+    border: 2px solid hsl(280.41deg 27.75% 91.86%);
+    border-radius: 8px ;
+}
+.container h2{
+    text-align: center;
+  
+
+}
+header::before{
+    background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114139.jpg?t=st=1737195128~exp=1737198728~hmac=262c63935345b33b0a13f62e5019f6df7128d6cf0ccb68545c5b42f5674a7eb9&w=1060') no-repeat center center ;
+    /* background: url('https://img.freepik.com/free-photo/view-gym-room-training-sports_23-2151699522.jpg?t=st=1737196054~exp=1737199654~hmac=1ec7ae16bb338dfbde63efa010b81ec0fe2702fe32ece3e23998ad5a572a0315&w=1060'); */
+    content: "";
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    top :0;
+    left:0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.8;
+   
+   
+    
+}
+
+.Footer{
+    display: grid;
+    background-color: var(--bg-color);
+    gap: 0rem;
+   
+    grid-template-columns: fr 1fr;
+    height: 404px;
+    margin-top: 160px; 
+    /* set margin so that footer comes after container  */
+    position: relative; 
+    grid-template-areas: 'address address address'
+    'copyrights copyrights copyrights';
+    
+}
+.foots{
+    color: #a2b3c3;
+}
+#address{
+    grid-area: address;
+
+}
+#copyrights{
+    grid-area: copyrights;
+ 
+    position: relative;
+  
+    justify-self: center;
+
+}
+
+.foots#address{
+    display: grid;
+    /* background-color: rgb(112, 130, 76); */
+    gap: 1rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 'left  social-icons'
+    ;
+   
+}
+
+
+.ms#left{
+    display: grid;
+    gap: 0rem;
+   
+/*    
+    grid-template-areas: 'ad add add '
+    'ph phone phone '
+    'mail email email'; */
+    padding: 15px;
+    
+}
+.msItems{
+    /* border: 3px solid black; */
+    padding: 13px;
+    margin-top: -20px;
+}
+
+#social-icons{
+    grid-area: social-icons;
+}
+footer div.ms{
+    color: rgb(211, 198, 198);
+}
