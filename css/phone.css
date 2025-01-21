@@ -78,8 +78,10 @@ header{
   
 }
 .nav{
-    color: #000000;
+    color: #dfc2c2;
     text-decoration: none;
+   
+
 }
 .active{
     grid-area: active;
@@ -102,6 +104,10 @@ header{
 .navbar li a:hover, .navbar li a.active{
     text-decoration: underline;
     color:#511919;
+    box-shadow: 0.2rem 0.2rem 0.8rem 0.5rem var(--bg-color);
+    border-radius: 0.3rem;
+    background-color: #8f88d4;
+
 }
 
 
@@ -215,8 +221,8 @@ header{
 
 }
 header::before{
-    background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114139.jpg?t=st=1737195128~exp=1737198728~hmac=262c63935345b33b0a13f62e5019f6df7128d6cf0ccb68545c5b42f5674a7eb9&w=1060') no-repeat center center ;
-    /* background: url('https://img.freepik.com/free-photo/view-gym-room-training-sports_23-2151699522.jpg?t=st=1737196054~exp=1737199654~hmac=1ec7ae16bb338dfbde63efa010b81ec0fe2702fe32ece3e23998ad5a572a0315&w=1060'); */
+    background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_1280.jpg')no-repeat center center ;
+    /* background: url('https://cdn.pixabay.com/photo/2017/06/21/14/45/weightlifting-2427475_640.jpg'); */
     content: "";
     background-size: cover;
     display: flex;
@@ -228,7 +234,7 @@ header::before{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    opacity: 0.8;
+    opacity: .9;
    
    
     
