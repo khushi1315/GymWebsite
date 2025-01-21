@@ -14,7 +14,7 @@ body{
   
     margin:0rem;
     padding:0rem;
-    /* background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_1280.jpg'); */
+    background: url('https://cdn.pixabay.com/photo/2017/06/21/14/40/weightlifting-2427461_1280.jpg');
    
     font-family: "Alegreya", serif;
     font-optical-sizing: auto;
@@ -53,7 +53,7 @@ header{
 }
 .logo img{
     grid-area: logo;
-    
+    color: transparent;
   
     width: 4.4rem;
     margin-left: 12%;
